@@ -1,4 +1,4 @@
-Aplicación móvil para iOS utilizando xCode y Storyboards
+Mobile app for iOS using xCode and Storyboards
 
 Members:
 - Patricio Calderon Castrat
