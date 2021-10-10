@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="priver" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="priver_conductor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Drz-1o-kXU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
@@ -20,7 +20,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qif-Ka-llf">
                                 <rect key="frame" x="0.0" y="757.66666666666663" width="414" height="104.33333333333337"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u0M-3w-Lip" customClass="roundButton" customModule="priver" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u0M-3w-Lip" customClass="roundButton" customModule="priver_conductor" customModuleProvider="target">
                                         <rect key="frame" x="60" y="27" width="294" height="51"/>
                                         <color key="backgroundColor" name="color"/>
                                         <constraints>
@@ -50,12 +50,6 @@
                                     <constraint firstAttribute="width" constant="180" id="qoW-F8-UKu"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-letter" translatesAutoresizingMaskIntoConstraints="NO" id="Fah-b4-san">
-                                <rect key="frame" x="117" y="93" width="180" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="eYw-ca-Lcd"/>
-                                </constraints>
-                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car" translatesAutoresizingMaskIntoConstraints="NO" id="WTA-Uj-Abs">
                                 <rect key="frame" x="57" y="373" width="300" height="150"/>
                                 <constraints>
@@ -63,20 +57,35 @@
                                     <constraint firstAttribute="height" constant="150" id="tQo-8n-fAP"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GsG-Vy-s1z">
+                                <rect key="frame" x="117" y="73" width="180" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="1xV-UF-HMA"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Priver        Conductor">
+                                        <attributes>
+                                            <font key="NSFont" size="24" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="highlightedColor" red="0.13248258830000001" green="0.1672056019" blue="0.27044594290000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TAX-w9-lqy"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Fah-b4-san" firstAttribute="top" secondItem="hLs-df-745" secondAttribute="bottom" constant="20" id="3Cr-rN-2kr"/>
-                            <constraint firstItem="Fah-b4-san" firstAttribute="leading" secondItem="hLs-df-745" secondAttribute="leading" id="4Rj-pC-sAm"/>
+                            <constraint firstItem="GsG-Vy-s1z" firstAttribute="trailing" secondItem="hLs-df-745" secondAttribute="trailing" id="79M-Pz-gVT"/>
                             <constraint firstItem="TAX-w9-lqy" firstAttribute="trailing" secondItem="Qif-Ka-llf" secondAttribute="trailing" id="7Eh-NP-BQ8"/>
                             <constraint firstItem="hLs-df-745" firstAttribute="top" secondItem="TAX-w9-lqy" secondAttribute="top" id="8nl-Bq-YtX"/>
                             <constraint firstItem="WTA-Uj-Abs" firstAttribute="centerX" secondItem="Drz-1o-kXU" secondAttribute="centerX" id="8tm-pU-3W7"/>
                             <constraint firstItem="Qif-Ka-llf" firstAttribute="bottom" secondItem="TAX-w9-lqy" secondAttribute="bottom" id="EaY-SE-JNk"/>
                             <constraint firstItem="WTA-Uj-Abs" firstAttribute="centerY" secondItem="Drz-1o-kXU" secondAttribute="centerY" id="Fbr-fg-yZQ"/>
-                            <constraint firstItem="Fah-b4-san" firstAttribute="trailing" secondItem="hLs-df-745" secondAttribute="trailing" id="fwq-9S-ogG"/>
-                            <constraint firstItem="hLs-df-745" firstAttribute="centerX" secondItem="Drz-1o-kXU" secondAttribute="centerX" id="kba-B5-RUX"/>
+                            <constraint firstItem="GsG-Vy-s1z" firstAttribute="leading" secondItem="hLs-df-745" secondAttribute="leading" id="aT8-Ug-hvR"/>
+                            <constraint firstItem="GsG-Vy-s1z" firstAttribute="top" secondItem="hLs-df-745" secondAttribute="bottom" id="pIE-Dx-FXg"/>
                             <constraint firstItem="Qif-Ka-llf" firstAttribute="leading" secondItem="TAX-w9-lqy" secondAttribute="leading" id="ue1-In-nUJ"/>
+                            <constraint firstItem="GsG-Vy-s1z" firstAttribute="centerX" secondItem="Drz-1o-kXU" secondAttribute="centerX" id="vdL-qK-kqr"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="POL-2Z-wiO"/>
@@ -88,7 +97,7 @@
         <!--Verify Controller-->
         <scene sceneID="5As-94-b21">
             <objects>
-                <viewController storyboardIdentifier="VerifyController" id="PLq-JG-ndP" customClass="VerifyController" customModule="priver" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VerifyController" id="PLq-JG-ndP" customClass="VerifyController" customModule="priver_conductor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yZx-FZ-TSo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -106,7 +115,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1O5-yy-nL3">
                                 <rect key="frame" x="50" y="268" width="314" height="360"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5FH-bf-ld6" customClass="roundButton" customModule="priver" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5FH-bf-ld6" customClass="roundButton" customModule="priver_conductor" customModuleProvider="target">
                                         <rect key="frame" x="10" y="270" width="294" height="51"/>
                                         <color key="backgroundColor" name="color"/>
                                         <constraints>
@@ -272,7 +281,7 @@ the verification code </string>
         <!--Login Controller-->
         <scene sceneID="b5E-Im-F96">
             <objects>
-                <viewController storyboardIdentifier="LoginController" id="33P-3i-wb0" customClass="LoginController" customModule="priver" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginController" id="33P-3i-wb0" customClass="LoginController" customModule="priver_conductor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="h9u-CR-oEm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -306,7 +315,7 @@ the verification code </string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jzo-0i-KkK" customClass="roundButton" customModule="priver" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jzo-0i-KkK" customClass="roundButton" customModule="priver_conductor" customModuleProvider="target">
                                         <rect key="frame" x="20" y="354" width="313" height="51"/>
                                         <color key="backgroundColor" name="color"/>
                                         <constraints>
@@ -435,7 +444,7 @@ the verification code </string>
         <!--Forgot Controller-->
         <scene sceneID="U9O-oe-nof">
             <objects>
-                <viewController storyboardIdentifier="ForgotController" id="LB7-aw-QXm" customClass="ForgotController" customModule="priver" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ForgotController" id="LB7-aw-QXm" customClass="ForgotController" customModule="priver_conductor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0F2-aV-SF0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -461,7 +470,7 @@ the verification code </string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jBR-Sl-bzr" customClass="roundButton" customModule="priver" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jBR-Sl-bzr" customClass="roundButton" customModule="priver_conductor" customModuleProvider="target">
                                         <rect key="frame" x="10" y="223" width="304" height="51"/>
                                         <color key="backgroundColor" name="color"/>
                                         <constraints>
@@ -548,7 +557,7 @@ the verification code </string>
         <!--Set Password Controller-->
         <scene sceneID="Mby-pS-e2E">
             <objects>
-                <viewController storyboardIdentifier="SetPasswordController" id="Eck-B4-bHI" customClass="SetPasswordController" customModule="priver" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SetPasswordController" id="Eck-B4-bHI" customClass="SetPasswordController" customModule="priver_conductor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZGT-VS-vIb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -582,7 +591,7 @@ the verification code </string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YK0-oc-yqL" customClass="roundButton" customModule="priver" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YK0-oc-yqL" customClass="roundButton" customModule="priver_conductor" customModuleProvider="target">
                                         <rect key="frame" x="10" y="317.66666666666669" width="314" height="51"/>
                                         <color key="backgroundColor" name="color"/>
                                         <constraints>
@@ -686,7 +695,7 @@ the verification code </string>
         <!--Create Account Controller-->
         <scene sceneID="7HJ-8w-jqK">
             <objects>
-                <viewController storyboardIdentifier="CreateAccountController" id="LK1-2r-o7c" customClass="CreateAccountController" customModule="priver" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CreateAccountController" id="LK1-2r-o7c" customClass="CreateAccountController" customModule="priver_conductor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vFx-KK-afe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -756,7 +765,7 @@ the verification code </string>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QV8-MH-wm2">
                                         <rect key="frame" x="120" y="136" width="234" height="50.333333333333343"/>
                                         <attributedString key="attributedText">
-                                            <fragment content="Pofile  Picture">
+                                            <fragment content="Profile  Picture">
                                                 <attributes>
                                                     <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <font key="NSFont" size="21" name="HelveticaNeue-Bold"/>
@@ -772,7 +781,7 @@ the verification code </string>
                                         <color key="textColor" systemColor="opaqueSeparatorColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="naO-60-GLO" customClass="roundButton" customModule="priver" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="naO-60-GLO" customClass="roundButton" customModule="priver_conductor" customModuleProvider="target">
                                         <rect key="frame" x="10" y="622" width="344" height="51"/>
                                         <color key="backgroundColor" systemColor="systemRedColor"/>
                                         <constraints>
@@ -858,13 +867,12 @@ the verification code </string>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2444" y="564.46776611694156"/>
+            <point key="canvasLocation" x="2445" y="596"/>
         </scene>
     </scenes>
     <resources>
         <image name="back" width="170.66667175292969" height="170.66667175292969"/>
         <image name="car" width="827" height="480.33334350585938"/>
-        <image name="logo-letter" width="355" height="130"/>
         <image name="point" width="354.66665649414062" height="75"/>
         <namedColor name="color">
             <color red="0.99607843137254903" green="0.29803921568627451" blue="0.29411764705882354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

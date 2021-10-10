@@ -22,7 +22,7 @@
 
 /* Begin PBXFileReference section */
 		A159188727112690003A877E /* CreateAccountController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountController.swift; sourceTree = "<group>"; };
-		A1A712E5270DF3310003AA36 /* priver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = priver.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1A712E5270DF3310003AA36 /* priver-conductor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "priver-conductor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1A712E8270DF3310003AA36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1A712EA270DF3310003AA36 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A1A712EC270DF3310003AA36 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 		A1A712E6270DF3310003AA36 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A1A712E5270DF3310003AA36 /* priver.app */,
+				A1A712E5270DF3310003AA36 /* priver-conductor.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -85,9 +85,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A1A712E4270DF3310003AA36 /* priver */ = {
+		A1A712E4270DF3310003AA36 /* priver-conductor */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A1A712F9270DF3330003AA36 /* Build configuration list for PBXNativeTarget "priver" */;
+			buildConfigurationList = A1A712F9270DF3330003AA36 /* Build configuration list for PBXNativeTarget "priver-conductor" */;
 			buildPhases = (
 				A1A712E1270DF3310003AA36 /* Sources */,
 				A1A712E2270DF3310003AA36 /* Frameworks */,
@@ -97,9 +97,9 @@
 			);
 			dependencies = (
 			);
-			name = priver;
+			name = "priver-conductor";
 			productName = priver;
-			productReference = A1A712E5270DF3310003AA36 /* priver.app */;
+			productReference = A1A712E5270DF3310003AA36 /* priver-conductor.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -116,7 +116,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A1A712E0270DF3310003AA36 /* Build configuration list for PBXProject "priver" */;
+			buildConfigurationList = A1A712E0270DF3310003AA36 /* Build configuration list for PBXProject "priver-conductor" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -129,7 +129,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A1A712E4270DF3310003AA36 /* priver */,
+				A1A712E4270DF3310003AA36 /* priver-conductor */,
 			);
 		};
 /* End PBXProject section */
@@ -340,7 +340,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A1A712E0270DF3310003AA36 /* Build configuration list for PBXProject "priver" */ = {
+		A1A712E0270DF3310003AA36 /* Build configuration list for PBXProject "priver-conductor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A1A712F7270DF3330003AA36 /* Debug */,
@@ -349,7 +349,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A1A712F9270DF3330003AA36 /* Build configuration list for PBXNativeTarget "priver" */ = {
+		A1A712F9270DF3330003AA36 /* Build configuration list for PBXNativeTarget "priver-conductor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A1A712FA270DF3330003AA36 /* Debug */,
